@@ -1507,17 +1507,18 @@
   const paramFrom = queryParams.get('from');
   const paramTo = queryParams.get('to');
 
-  if (paramTo && paramTo.trim()) {
-    const cleanTo = paramTo.trim();
-    document.getElementById('heroRecipientName').textContent = `प्रणाम ${cleanTo} जी! 🙏`;
-    document.getElementById('inputRecipient').value = cleanTo;
-  }
+  const activeSender = (paramFrom && paramFrom.trim()) ? paramFrom.trim() : 'Gunjan Kumar Gaurav';
+  const activeRecipient = (paramTo && paramTo.trim()) ? paramTo.trim() : '';
 
-  if (paramFrom && paramFrom.trim()) {
-    const cleanFrom = paramFrom.trim();
-    document.getElementById('displaySenderName').textContent = cleanFrom;
-    document.getElementById('inputSender').value = cleanFrom;
-    document.getElementById('portalSenderText').innerHTML = `<strong>${cleanFrom}</strong> की ओर से आपके लिए पावन अर्घ्य एवं ठेकुआ प्रसाद!`;
+  document.getElementById('displaySenderName').textContent = activeSender;
+  document.getElementById('inputSender').value = activeSender;
+
+  if (activeRecipient) {
+    document.getElementById('heroRecipientName').textContent = `प्रणाम ${activeRecipient} जी! 🙏`;
+    document.getElementById('inputRecipient').value = activeRecipient;
+    document.getElementById('portalSenderText').innerHTML = `<strong>${activeSender}</strong> की ओर से <strong>${activeRecipient} जी</strong> के लिए विशेष पावन अर्घ्य व ठेकुआ प्रसाद!`;
+  } else {
+    document.getElementById('portalSenderText').innerHTML = `<strong>${activeSender}</strong> की ओर से आपके लिए पावन अर्घ्य एवं ठेकुआ प्रसाद!`;
   }
 
   /* ==============================================================

@@ -1,0 +1,6 @@
+resource_group_name = "rg-chhath-wishes-prod"
+location            = "centralindia"
+app_name            = "gunjan-chhath-wishes-2026"
+sku_tier            = "Free"
+sku_size            = "Free"
+environment         = "prod"

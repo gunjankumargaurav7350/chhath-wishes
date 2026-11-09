@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<title>छठ महापर्व 2026 | संध्या-उषा संगम व पावन अर्घ्य | Gunjan Kumar Gaurav</title>
-<meta name="description" content="लोक आस्था के महापर्व छठ पूजा की अद्वितीय एवं पावन शुभकामनाएं। डूबते एवं उगते सूर्य का दिव्य संगम, पावन अर्घ्य, छठी मइया के मधुर गीत एवं डिजिटल ठेकुआ प्रसाद।" />
+<title>छठ महापर्व 2026 | गंगा तट संध्या-उषा संगम | Gunjan Kumar Gaurav</title>
+<meta name="description" content="लोक आस्था के महापर्व छठ पूजा की अद्वितीय एवं पावन शुभकामनाएं। जीवंत गंगा तट, डूबते एवं उगते सूर्य का दिव्य संगम, पावन अर्घ्य, छठी मइया के मधुर गीत एवं डिजिटल ठेकुआ प्रसाद।" />
 
 <!-- OpenGraph / WhatsApp Preview -->
-<meta property="og:title" content="🌾 महापर्व छठ पूजा 2026: संध्या और उषा का पावन संगम 🌅" />
+<meta property="og:title" content="🌾 महापर्व छठ पूजा 2026: गंगा तट पर संध्या और उषा का पावन संगम 🌅" />
 <meta property="og:description" content="यहाँ क्लिक करें और सुनें छठी मइया का पावन गीत, सूर्य देव को अर्घ्य दें एवं डिजिटल ठेकुआ प्रसाद पाएं! ✨" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://gunjankumargaurav7350.github.io/chhath-wishes/" />
 <meta name="theme-color" content="#d84315" />
 
-<!-- Google Fonts: Trending Luxury Hindi & Sanskrit Typography -->
+<!-- Google Fonts: Luxury Devanagari & Sanskrit Typography -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Rozha+One&family=Tiro+Devanagari+Hindi:ital@0;1&family=Yatra+One&display=swap" rel="stylesheet">
@@ -24,30 +24,30 @@
     --sun-bright: #ffe082;
     --sun-amber: #ff9100;
     --sunset-crimson: #d84315;
-    --twilight-violet: #2e0854;
-    --night-deep: #0d021f;
     --dawn-orange: #ff5722;
-    --ganga-water-top: rgba(255, 145, 0, 0.25);
-    --ganga-water-base: #061024;
-    --glass-bg: rgba(22, 6, 36, 0.65);
-    --glass-border: rgba(255, 193, 7, 0.35);
-    --gold-glow: 0 0 35px rgba(255, 193, 7, 0.55);
-    --theme-transition: background 1s ease, border-color 0.8s ease, box-shadow 0.8s ease;
+    --sky-zenith: #140525;
+    --sky-mid: #520f32;
+    --sky-horizon: #e65100;
+    --water-base: #061122;
+    --glass-card: rgba(16, 4, 26, 0.64);
+    --glass-border: rgba(255, 193, 7, 0.38);
+    --gold-glow: 0 0 35px rgba(255, 193, 7, 0.5);
+    --theme-ease: all 0.9s cubic-bezier(0.25, 1, 0.5, 1);
   }
 
-  /* CELESTIAL THEMES (SUNSET / SANGAM / SUNRISE) */
+  /* CELESTIAL THEMES */
   body.theme-sunset {
-    --twilight-violet: #3b0625;
-    --night-deep: #140316;
-    --sunset-crimson: #c2185b;
-    --sun-amber: #f4511e;
+    --sky-zenith: #1c0520;
+    --sky-mid: #680d28;
+    --sky-horizon: #c2185b;
+    --water-base: #100619;
   }
 
   body.theme-sunrise {
-    --twilight-violet: #1c0e3f;
-    --night-deep: #070921;
-    --sunset-crimson: #e65100;
-    --sun-amber: #ffb300;
+    --sky-zenith: #0a1329;
+    --sky-mid: #38123d;
+    --sky-horizon: #ff6f00;
+    --water-base: #051426;
   }
 
   * {
@@ -67,125 +67,292 @@
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
-    background: radial-gradient(circle at 50% 15%, #430d4a 0%, #20042d 40%, var(--night-deep) 100%);
-    transition: var(--theme-transition);
+    background-color: var(--sky-zenith);
+    transition: var(--theme-ease);
   }
 
-  /* AMBIENT CELESTIAL AURORA (DYNAMIC SUNSET & SUNRISE FUSION) */
-  .celestial-sky {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 0;
-    overflow: hidden;
-  }
-
-  .aurora-layer {
-    position: absolute;
-    inset: 0;
-    background: 
-      radial-gradient(circle at 18% 25%, rgba(216, 67, 21, 0.45) 0%, transparent 50%),
-      radial-gradient(circle at 82% 25%, rgba(255, 179, 0, 0.4) 0%, transparent 50%),
-      radial-gradient(circle at 50% 50%, rgba(138, 28, 124, 0.35) 0%, transparent 65%);
-    filter: blur(50px);
-    opacity: 0.85;
-    animation: auroraDrift 14s ease-in-out infinite alternate;
-  }
-
-  @keyframes auroraDrift {
-    0% { transform: scale(1) rotate(0deg); opacity: 0.75; }
-    50% { transform: scale(1.08) rotate(2deg); opacity: 0.95; }
-    100% { transform: scale(1.02) rotate(-2deg); opacity: 0.8; }
-  }
-
-  /* CANVAS FOR REAL-TIME FLOATING MARIGOLDS & GOLDEN STARS */
-  canvas#celestialCanvas {
+  /* ==============================================================
+     CINEMATIC LIVING GHAT BACKGROUND (NEVER SEEN BEFORE)
+     ============================================================== */
+  .divine-ghat-backdrop {
     position: fixed;
     inset: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 0;
+    overflow: hidden;
     pointer-events: none;
   }
 
-  /* GENTLE WATER WAVES AT THE BOTTOM (HOLY GANGES) */
-  .ganga-waves-container {
-    position: fixed;
+  /* 1. ATMOSPHERIC SKY GRADIENT (TWILIGHT & DAWN BLEND) */
+  .sky-ambient-layer {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      var(--sky-zenith) 0%,
+      var(--sky-mid) 32%,
+      var(--sky-horizon) 60%,
+      #ffb300 75%,
+      var(--water-base) 80%
+    );
+    transition: var(--theme-ease);
+  }
+
+  /* DUALITY GLOW (SUNSET CRIMSON ON LEFT, SUNRISE GOLD ON RIGHT) */
+  .sky-duality-blend {
+    position: absolute;
+    inset: 0;
+    background: 
+      radial-gradient(ellipse at 15% 55%, rgba(216, 67, 21, 0.6) 0%, transparent 60%),
+      radial-gradient(ellipse at 85% 55%, rgba(255, 179, 0, 0.55) 0%, transparent 60%),
+      radial-gradient(circle at 50% 65%, rgba(255, 235, 59, 0.45) 0%, transparent 55%);
+    mix-blend-mode: screen;
+    opacity: 0.9;
+    filter: blur(25px);
+    animation: skyAtmosphereShift 12s ease-in-out infinite alternate;
+  }
+
+  @keyframes skyAtmosphereShift {
+    0% { transform: scale(1); opacity: 0.85; }
+    50% { transform: scale(1.04); opacity: 1; }
+    100% { transform: scale(1.01); opacity: 0.88; }
+  }
+
+  /* 2. ROTATING GOD RAYS (DIVINE SUNBEAMS) */
+  .sun-god-rays {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140vmax;
+    height: 140vmax;
+    background: conic-gradient(
+      from 0deg,
+      rgba(255, 215, 0, 0.12) 0deg 14deg,
+      transparent 14deg 28deg,
+      rgba(255, 111, 0, 0.12) 28deg 42deg,
+      transparent 42deg 56deg,
+      rgba(255, 215, 0, 0.12) 56deg 70deg,
+      transparent 70deg 84deg,
+      rgba(255, 111, 0, 0.12) 84deg 98deg,
+      transparent 98deg 112deg,
+      rgba(255, 215, 0, 0.12) 112deg 126deg,
+      transparent 126deg 140deg,
+      rgba(255, 215, 0, 0.12) 140deg 154deg,
+      transparent 154deg 168deg,
+      rgba(255, 111, 0, 0.12) 168deg 182deg,
+      transparent 182deg 196deg,
+      rgba(255, 215, 0, 0.12) 196deg 210deg,
+      transparent 210deg 224deg,
+      rgba(255, 111, 0, 0.12) 224deg 238deg,
+      transparent 238deg 252deg,
+      rgba(255, 215, 0, 0.12) 252deg 266deg,
+      transparent 266deg 280deg,
+      rgba(255, 215, 0, 0.12) 280deg 294deg,
+      transparent 294deg 308deg,
+      rgba(255, 111, 0, 0.12) 308deg 322deg,
+      transparent 322deg 336deg,
+      rgba(255, 215, 0, 0.12) 336deg 350deg,
+      transparent 350deg 360deg
+    );
+    border-radius: 50%;
+    filter: blur(12px);
+    opacity: 0.75;
+    animation: godRaysSlowSpin 80s linear infinite;
+  }
+
+  @keyframes godRaysSlowSpin {
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+
+  /* 3. BIG HORIZON SUN (BHAGWAN SURYA) */
+  .horizon-sun-disc {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: clamp(220px, 45vw, 360px);
+    height: clamp(220px, 45vw, 360px);
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, #ffffff 0%, #fff9c4 28%, #ffca28 55%, #ff5722 80%, transparent 100%);
+    box-shadow: 0 0 80px rgba(255, 193, 7, 0.95), 0 0 160px rgba(255, 87, 34, 0.8), 0 0 240px rgba(255, 61, 0, 0.6);
+    filter: blur(2px);
+    animation: horizonSunPulse 5s ease-in-out infinite alternate;
+  }
+
+  @keyframes horizonSunPulse {
+    0% { transform: translate(-50%, -50%) scale(0.97); }
+    100% { transform: translate(-50%, -50%) scale(1.05); }
+  }
+
+  /* 4. SACRED GHAT SILHOUETTE PANORAMA (AUTHENTIC CHHATH GHAT) */
+  .ghat-panorama-svg-wrap {
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    width: 100%;
+    height: clamp(200px, 34vw, 340px);
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .ghat-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  /* 5. LIVING GANGES RIVER WATER SURFACE (SPECULAR SUN REFLECTION) */
+  .ganga-river-container {
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 180px;
-    pointer-events: none;
-    z-index: 2;
+    height: 220px;
+    z-index: 3;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 145, 0, 0.35) 0%,
+      rgba(15, 28, 55, 0.85) 30%,
+      var(--water-base) 100%
+    );
     overflow: hidden;
   }
 
-  .wave-svg {
+  /* GOLDEN SUN REFLECTION COLUMN ON WATER */
+  .water-sun-reflection {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(140px, 35vw, 300px);
+    height: 100%;
+    background: radial-gradient(
+      ellipse at 50% 0%,
+      rgba(255, 235, 59, 0.9) 0%,
+      rgba(255, 152, 0, 0.55) 45%,
+      rgba(255, 87, 34, 0.2) 75%,
+      transparent 100%
+    );
+    filter: blur(10px);
+    opacity: 0.88;
+    animation: reflectionWobble 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes reflectionWobble {
+    0% { transform: translateX(-50%) scaleX(0.95); opacity: 0.8; }
+    100% { transform: translateX(-50%) scaleX(1.08); opacity: 0.95; }
+  }
+
+  /* ANIMATED RIPPLE SVG WAVES */
+  .water-harmonic-wave {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 200%;
     height: 100%;
-    opacity: 0.55;
-    animation: waveSlide 12s linear infinite alternate;
+    opacity: 0.45;
+    animation: riverWaveSlide 12s linear infinite alternate;
   }
 
-  .wave-svg.wave-back {
+  .water-harmonic-wave.wave-back {
     animation-duration: 18s;
-    opacity: 0.35;
-    fill: #ff6f00;
+    opacity: 0.25;
+    fill: #ff9100;
   }
 
-  .wave-svg.wave-front {
+  .water-harmonic-wave.wave-front {
     animation-duration: 9s;
-    opacity: 0.65;
-    fill: #0a1931;
+    opacity: 0.55;
+    fill: #061122;
   }
 
-  @keyframes waveSlide {
+  @keyframes riverWaveSlide {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
 
-  /* FLOATING RIVER DIYAS */
-  .river-diyas-layer {
-    position: fixed;
+  /* 6. FLOATING EARTHEN DIYAS WITH REALISTIC GLOW */
+  .floating-diya-river {
+    position: absolute;
     inset: 0;
     pointer-events: none;
-    z-index: 3;
+    z-index: 4;
     overflow: hidden;
   }
 
-  .floating-diya {
+  .terracotta-diya {
     position: absolute;
-    bottom: -50px;
-    font-size: 24px;
-    filter: drop-shadow(0 0 12px #ffc107);
-    opacity: 0.9;
-    animation: driftRiver linear infinite;
+    bottom: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: driftDiyaRiver linear infinite;
+    filter: drop-shadow(0 0 16px #ff9800);
   }
 
-  @keyframes driftRiver {
+  .diya-flame {
+    width: 14px;
+    height: 20px;
+    background: radial-gradient(circle at 50% 70%, #ffffff 0%, #fff176 30%, #ff9800 70%, transparent 100%);
+    border-radius: 50% 50% 35% 35% / 60% 60% 40% 40%;
+    box-shadow: 0 0 18px #ffb300, 0 0 30px #ff5722;
+    animation: flameFlicker 0.25s infinite alternate ease-in-out;
+  }
+
+  @keyframes flameFlicker {
+    0% { transform: scale(0.92) rotate(-2deg); }
+    100% { transform: scale(1.08) rotate(2deg); }
+  }
+
+  .diya-base {
+    width: 32px;
+    height: 12px;
+    background: linear-gradient(180deg, #b04e06 0%, #5d2502 100%);
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  .diya-ripple {
+    width: 48px;
+    height: 6px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse, rgba(255, 179, 0, 0.45) 0%, transparent 80%);
+    margin-top: -3px;
+  }
+
+  @keyframes driftDiyaRiver {
     0% {
       transform: translateY(0) translateX(0) scale(0.7);
       opacity: 0;
     }
-    15% { opacity: 0.95; }
-    85% { opacity: 0.85; }
+    15% { opacity: 1; }
+    85% { opacity: 0.9; }
     100% {
-      transform: translateY(-110vh) translateX(50px) scale(1.15) rotate(15deg);
+      transform: translateY(-110vh) translateX(60px) scale(1.2) rotate(12deg);
       opacity: 0;
     }
   }
 
+  /* 7. CANVAS FOR 3D MARIGOLD PETALS & SOLAR EMBERS */
+  canvas#celestialCanvas {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    pointer-events: none;
+  }
+
   /* ==============================================================
-     FULL-SCREEN ENTRANCE GATEWAY (ENSURES 100% AUTOPLAY ON CLICK)
+     FULL-SCREEN ENTRANCE PORTAL (AUTOPLAY GUARANTEE ON TOUCH/CLICK)
      ============================================================== */
   .entry-portal {
     position: fixed;
     inset: 0;
     z-index: 9999;
-    background: radial-gradient(circle at 50% 35%, #3c094f 0%, #170321 65%, #08000d 100%);
+    background: radial-gradient(circle at 50% 38%, #3e0b50 0%, #150320 65%, #08000d 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -249,7 +416,7 @@
     font-size: clamp(1rem, 3.2vw, 1.35rem);
     color: #ffe0b2;
     margin-bottom: 28px;
-    max-width: 520px;
+    max-width: 540px;
     line-height: 1.6;
     font-family: 'Tiro Devanagari Hindi', serif;
   }
@@ -300,8 +467,8 @@
     align-items: center;
     padding: 14px 20px;
     backdrop-filter: blur(20px);
-    background: rgba(18, 4, 30, 0.6);
-    border-bottom: 1px solid rgba(255, 193, 7, 0.2);
+    background: rgba(14, 3, 22, 0.65);
+    border-bottom: 1px solid rgba(255, 193, 7, 0.25);
   }
 
   .brand-pill {
@@ -402,12 +569,12 @@
 
   .duality-switch {
     display: inline-flex;
-    background: rgba(25, 6, 38, 0.75);
+    background: rgba(20, 5, 30, 0.78);
     border: 1.5px solid rgba(255, 193, 7, 0.45);
     border-radius: 50px;
     padding: 5px;
-    backdrop-filter: blur(16px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
     gap: 4px;
   }
 
@@ -435,13 +602,13 @@
 
   /* PERSONALIZED GREETING BANNER */
   .recipient-hero-badge {
-    background: linear-gradient(135deg, rgba(255, 145, 0, 0.2), rgba(216, 67, 21, 0.25));
-    border: 1px solid var(--sun-gold);
-    border-radius: 24px;
-    padding: 16px 20px;
+    background: linear-gradient(135deg, rgba(255, 145, 0, 0.22), rgba(216, 67, 21, 0.28));
+    border: 1.5px solid var(--sun-gold);
+    border-radius: 26px;
+    padding: 18px 22px;
     text-align: center;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 10px 35px rgba(255, 111, 0, 0.3);
+    backdrop-filter: blur(24px);
+    box-shadow: 0 10px 35px rgba(255, 111, 0, 0.35);
     margin-bottom: 24px;
     animation: badgeFloat 4s ease-in-out infinite alternate;
   }
@@ -453,7 +620,7 @@
 
   .recipient-name {
     font-family: 'Tiro Devanagari Hindi', serif;
-    font-size: clamp(1.3rem, 4vw, 2rem);
+    font-size: clamp(1.3rem, 4vw, 2.1rem);
     color: var(--sun-gold);
     font-weight: 700;
     margin-bottom: 4px;
@@ -561,7 +728,7 @@
     font-weight: 700;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(14px);
     margin-bottom: 12px;
   }
 
@@ -606,13 +773,13 @@
   .deck-pill {
     padding: 13px 22px;
     border-radius: 50px;
-    background: rgba(30, 8, 48, 0.7);
+    background: rgba(24, 6, 36, 0.72);
     border: 1.5px solid rgba(255, 193, 7, 0.5);
     color: #fff;
     font-size: 0.94rem;
     font-weight: 700;
     cursor: pointer;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(18px);
     display: flex;
     align-items: center;
     gap: 9px;
@@ -642,7 +809,7 @@
      MASTERPIECE WISH CARD (SOUL-STIRRING, NEVER-SEEN-BEFORE POETRY)
      ============================================================== */
   .masterpiece-wish-card {
-    background: linear-gradient(145deg, rgba(42, 11, 64, 0.82), rgba(26, 5, 42, 0.92));
+    background: var(--glass-card);
     border: 2px solid var(--sun-gold);
     border-radius: 36px;
     padding: clamp(26px, 6vw, 48px);
@@ -671,7 +838,7 @@
 
   /* PHILOSOPHY QUOTE (SUNSET DUALITY) */
   .philosophy-banner {
-    background: rgba(255, 145, 0, 0.15);
+    background: rgba(255, 145, 0, 0.18);
     border: 1px dashed var(--sun-gold);
     border-radius: 20px;
     padding: 18px 22px;
@@ -767,9 +934,9 @@
   }
 
   .duality-card {
-    background: rgba(26, 7, 38, 0.7);
+    background: var(--glass-card);
     border: 1.5px solid var(--glass-border);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(24px);
     border-radius: 28px;
     padding: 26px 22px;
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
@@ -856,7 +1023,7 @@
      PRASAD & DAURA 3D SHOWCASE SECTION
      ============================================================== */
   .prasad-section {
-    background: linear-gradient(135deg, rgba(38, 9, 58, 0.8), rgba(65, 12, 35, 0.8));
+    background: var(--glass-card);
     border: 1.5px solid var(--sun-gold);
     border-radius: 32px;
     padding: clamp(24px, 5vw, 40px);
@@ -892,7 +1059,7 @@
      TRENDING VIRAL WISH & LINK GENERATOR (WHATSAPP HERO)
      ============================================================== */
   .generator-hero-box {
-    background: linear-gradient(135deg, rgba(20, 4, 32, 0.9), rgba(52, 10, 42, 0.9));
+    background: var(--glass-card);
     border: 2px solid var(--sun-gold);
     border-radius: 34px;
     padding: clamp(26px, 5vw, 42px);
@@ -942,7 +1109,7 @@
     width: 100%;
     padding: 15px 22px;
     border-radius: 18px;
-    background: rgba(12, 2, 20, 0.8);
+    background: rgba(10, 2, 18, 0.85);
     border: 1.5px solid rgba(255, 193, 7, 0.45);
     color: #fff;
     font-size: 1.02rem;
@@ -954,7 +1121,7 @@
   .input-box:focus {
     border-color: var(--sun-gold);
     box-shadow: 0 0 20px rgba(255, 193, 7, 0.5);
-    background: rgba(20, 4, 32, 0.95);
+    background: rgba(18, 3, 28, 0.95);
   }
 
   .gen-button-group {
@@ -1113,25 +1280,142 @@
 </head>
 <body class="theme-sangam">
 
-<!-- CELESTIAL AURORA (BACKGROUND MESH) -->
-<div class="celestial-sky">
-  <div class="aurora-layer"></div>
-</div>
+<!-- ==============================================================
+     CINEMATIC LIVING GHAT BACKGROUND (NEVER SEEN BEFORE)
+     ============================================================== -->
+<div class="divine-ghat-backdrop">
+  <!-- Dynamic Atmospheric Sky -->
+  <div class="sky-ambient-layer"></div>
+  <div class="sky-duality-blend"></div>
 
-<!-- CANVAS FOR LIVE MARIGOLDS & GOLDEN PARTICLES -->
-<canvas id="celestialCanvas"></canvas>
+  <!-- Rotating Volumetric God Rays -->
+  <div class="sun-god-rays"></div>
 
-<!-- FLOATING RIVER DIYAS -->
-<div class="river-diyas-layer" id="riverDiyas"></div>
+  <!-- Radiant Big Horizon Sun (Surya Dev) -->
+  <div class="horizon-sun-disc"></div>
 
-<!-- GENTLE GANGA WAVES (SVG) -->
-<div class="ganga-waves-container">
-  <svg class="wave-svg wave-back" viewBox="0 0 1200 120" preserveAspectRatio="none">
-    <path d="M0,0 C150,90 350,-40 500,40 C650,120 900,10 1200,40 L1200,120 L0,120 Z"></path>
-  </svg>
-  <svg class="wave-svg wave-front" viewBox="0 0 1200 120" preserveAspectRatio="none">
-    <path d="M0,20 C200,100 450,10 700,70 C950,120 1100,30 1200,60 L1200,120 L0,120 Z"></path>
-  </svg>
+  <!-- Authentic Ganga Ghat Silhouette Panorama (SVG Vector) -->
+  <div class="ghat-panorama-svg-wrap">
+    <svg class="ghat-svg" viewBox="0 0 1600 420" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="ghatSilGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#2a0833" stop-opacity="0.95"/>
+          <stop offset="60%" stop-color="#140219" stop-opacity="0.98"/>
+          <stop offset="100%" stop-color="#06000a" stop-opacity="1"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Distant Temples & Ghat Architecture on Left -->
+      <!-- Left Temple Spire 1 -->
+      <path d="M 90,80 L 115,220 L 65,220 Z" fill="url(#ghatSilGrad)"/>
+      <rect x="60" y="220" width="60" height="90" fill="url(#ghatSilGrad)"/>
+      <circle cx="90" cy="74" r="7" fill="#ffc107"/>
+      <path d="M 90,68 L 125,82 L 90,96 Z" fill="#ff5722"/>
+
+      <!-- Temple Spire 2 (Grand Shikhar) -->
+      <path d="M 180,40 L 215,210 L 145,210 Z" fill="url(#ghatSilGrad)"/>
+      <rect x="140" y="210" width="80" height="100" fill="url(#ghatSilGrad)"/>
+      <circle cx="180" cy="34" r="9" fill="#ffd54f"/>
+      <path d="M 180,26 L 225,44 L 180,62 Z" fill="#ff3d00"/>
+
+      <!-- Ghat Steps (सीढ़ियाँ) Descending into holy water -->
+      <path d="M 0,230 L 70,230 L 70,250 L 150,250 L 150,270 L 240,270 L 240,290 L 340,290 L 340,310 L 450,310 L 450,330 L 0,330 Z" fill="url(#ghatSilGrad)"/>
+
+      <!-- Glowing Earthen Lamps on Ghat Steps -->
+      <circle cx="65" cy="226" r="3.5" fill="#ffeb3b" filter="drop-shadow(0 0 6px #ff9800)"/>
+      <circle cx="145" cy="246" r="3.5" fill="#ffeb3b" filter="drop-shadow(0 0 6px #ff9800)"/>
+      <circle cx="235" cy="266" r="3.5" fill="#ffeb3b" filter="drop-shadow(0 0 6px #ff9800)"/>
+      <circle cx="335" cy="286" r="3.5" fill="#ffeb3b" filter="drop-shadow(0 0 6px #ff9800)"/>
+      <circle cx="445" cy="306" r="3.5" fill="#ffeb3b" filter="drop-shadow(0 0 6px #ff9800)"/>
+
+      <!-- Sacred Peepal Tree Branches Silhouette on Left -->
+      <path d="M 0,160 Q 50,110 110,130 Q 80,90 140,80 Q 90,50 170,40" stroke="url(#ghatSilGrad)" stroke-width="6" fill="none"/>
+
+      <!-- Traditional Sugarcane Canopy / Kosi Bharai (ईख का मंडप) -->
+      <path d="M 490,320 Q 530,130 560,115 Q 590,130 630,320" stroke="url(#ghatSilGrad)" stroke-width="7" fill="none"/>
+      <path d="M 510,320 Q 545,140 560,115 Q 575,140 610,320" stroke="url(#ghatSilGrad)" stroke-width="6" fill="none"/>
+      <!-- Sugarcane Leaves at Apex -->
+      <path d="M 560,115 Q 510,80 485,95 M 560,115 Q 610,80 635,95 M 560,115 Q 560,65 545,55 M 560,115 Q 570,65 585,55" stroke="url(#ghatSilGrad)" stroke-width="5" fill="none"/>
+      <!-- Glowing Akhand Diya inside Kosi -->
+      <circle cx="560" cy="310" r="5" fill="#ffeb3b" filter="drop-shadow(0 0 12px #ff9800)"/>
+
+      <!-- Devotee 1: Vratti Standing in Ganga Water Offering Sacred Soup (सूप) to Sun -->
+      <!-- Torso & Waist in water -->
+      <path d="M 770,325 C 770,270 782,245 798,220 C 804,210 816,210 822,220 C 835,245 845,270 845,325 Z" fill="url(#ghatSilGrad)"/>
+      <!-- Head with Chunari / Pagdi -->
+      <circle cx="810" cy="198" r="15" fill="url(#ghatSilGrad)"/>
+      <path d="M 795,192 C 798,175 822,175 825,192 C 835,200 828,218 820,228 Z" fill="url(#ghatSilGrad)"/>
+      <!-- Arms raised high holding Soup -->
+      <path d="M 800,235 L 778,190 L 755,168" stroke="url(#ghatSilGrad)" stroke-width="10" stroke-linecap="round"/>
+      <path d="M 822,235 L 800,188 L 768,162" stroke="url(#ghatSilGrad)" stroke-width="9" stroke-linecap="round"/>
+      <!-- Bamboo Soup (काँच के बाँस का सूप) with Offerings -->
+      <path d="M 735,148 L 788,168 L 776,186 L 725,168 Z" fill="#ffca28" stroke="#120218" stroke-width="3"/>
+      <!-- Holy Diya Glowing on the Soup -->
+      <circle cx="760" cy="156" r="4.5" fill="#ffffff" filter="drop-shadow(0 0 10px #ff3d00)"/>
+      <!-- Holy water ripples around Vratti -->
+      <ellipse cx="808" cy="326" rx="55" ry="7" fill="none" stroke="rgba(255, 193, 7, 0.55)" stroke-width="2.5"/>
+      <ellipse cx="808" cy="332" rx="85" ry="9" fill="none" stroke="rgba(255, 145, 0, 0.35)" stroke-width="1.8"/>
+
+      <!-- Devotee 2: Vratti Mother folding hands in Pranaam (अंजलि मुद्रा) -->
+      <circle cx="875" cy="214" r="13" fill="url(#ghatSilGrad)"/>
+      <path d="M 862,210 C 858,192 888,192 890,210 C 898,228 905,275 898,328 L 852,328 C 852,275 858,238 862,210 Z" fill="url(#ghatSilGrad)"/>
+      <!-- Folded hands -->
+      <path d="M 875,230 L 868,248 L 882,248 Z" fill="url(#ghatSilGrad)"/>
+      <!-- Water ripples -->
+      <ellipse cx="875" cy="330" rx="45" ry="6" fill="none" stroke="rgba(255, 193, 7, 0.45)" stroke-width="2"/>
+
+      <!-- Devotee 3 on Left with Bahangi (काँच ही बाँस के बहँगिया लचकत जाए) -->
+      <path d="M 680,315 L 730,315 L 720,250 L 690,250 Z" fill="url(#ghatSilGrad)"/>
+      <circle cx="705" cy="235" r="12" fill="url(#ghatSilGrad)"/>
+      <!-- Bahangi Bamboo Pole across shoulders -->
+      <path d="M 655,245 Q 705,238 755,245" stroke="url(#ghatSilGrad)" stroke-width="5" fill="none"/>
+      <!-- Hanging Dauras on both ends of Bahangi -->
+      <line x1="660" y1="245" x2="660" y2="280" stroke="url(#ghatSilGrad)" stroke-width="2.5"/>
+      <ellipse cx="660" cy="285" rx="16" ry="6" fill="url(#ghatSilGrad)"/>
+      <line x1="750" y1="245" x2="750" y2="280" stroke="url(#ghatSilGrad)" stroke-width="2.5"/>
+      <ellipse cx="750" cy="285" rx="16" ry="6" fill="url(#ghatSilGrad)"/>
+
+      <!-- Right Side: Traditional Wooden Boat (नाव) bobbing on Ganga -->
+      <path d="M 1160,305 Q 1250,340 1340,305 Q 1250,350 1160,305 Z" fill="url(#ghatSilGrad)"/>
+      <line x1="1230" y1="250" x2="1275" y2="350" stroke="url(#ghatSilGrad)" stroke-width="4.5"/>
+      <circle cx="1230" cy="255" r="4.5" fill="#ffeb3b" filter="drop-shadow(0 0 12px #ff9800)"/>
+
+      <!-- Right Side: Varanasi / Patna Ghat Temples & Chhatri Pavilion -->
+      <path d="M 1420,230 Q 1470,185 1520,230 Z" fill="url(#ghatSilGrad)"/>
+      <line x1="1435" y1="230" x2="1435" y2="305" stroke="url(#ghatSilGrad)" stroke-width="6"/>
+      <line x1="1505" y1="230" x2="1505" y2="305" stroke="url(#ghatSilGrad)" stroke-width="6"/>
+      <!-- Temple Spire behind -->
+      <path d="M 1530,95 L 1560,230 L 1500,230 Z" fill="url(#ghatSilGrad)"/>
+      <rect x="1495" y="230" width="70" height="85" fill="url(#ghatSilGrad)"/>
+      <circle cx="1530" cy="88" r="8" fill="#ffc107"/>
+      <path d="M 1530,82 L 1570,98 L 1530,114 Z" fill="#ff5722"/>
+
+      <!-- Right Ghat Steps -->
+      <path d="M 1360,305 L 1600,305 L 1600,345 L 1360,345 Z" fill="url(#ghatSilGrad)"/>
+      <circle cx="1390" cy="300" r="3.5" fill="#ffeb3b" filter="drop-shadow(0 0 6px #ff9800)"/>
+      <circle cx="1470" cy="300" r="3.5" fill="#ffeb3b" filter="drop-shadow(0 0 6px #ff9800)"/>
+      <circle cx="1550" cy="300" r="3.5" fill="#ffeb3b" filter="drop-shadow(0 0 6px #ff9800)"/>
+    </svg>
+  </div>
+
+  <!-- Living Reflective Ganges River Surface -->
+  <div class="ganga-river-container">
+    <!-- Golden Specular Sun Reflection Streak -->
+    <div class="water-sun-reflection"></div>
+    <!-- Layered Harmonic SVG Wave Currents -->
+    <svg class="water-harmonic-wave wave-back" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,10 C150,90 350,-20 500,50 C650,110 900,15 1200,45 L1200,120 L0,120 Z"></path>
+    </svg>
+    <svg class="water-harmonic-wave wave-front" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,35 C200,110 450,15 700,75 C950,125 1100,35 1200,65 L1200,120 L0,120 Z"></path>
+    </svg>
+  </div>
+
+  <!-- Realistically Floating Earthen Diyas -->
+  <div class="floating-diya-river" id="riverDiyas"></div>
+
+  <!-- Canvas for 3D Marigold Petals & Solar Fireflies -->
+  <canvas id="celestialCanvas"></canvas>
 </div>
 
 <!-- ==============================================================
@@ -1384,7 +1668,7 @@
     const osc = synthAudioCtx.createOscillator();
     const gain = synthAudioCtx.createGain();
     osc.type = 'sine';
-    osc.frequency.setValueAtTime(880, synthAudioCtx.currentTime); // High Bell Note
+    osc.frequency.setValueAtTime(880, synthAudioCtx.currentTime);
     osc.frequency.exponentialRampToValueAtTime(440, synthAudioCtx.currentTime + 1.2);
     gain.gain.setValueAtTime(0.3, synthAudioCtx.currentTime);
     gain.gain.exponentialRampToValueAtTime(0.001, synthAudioCtx.currentTime + 1.8);
@@ -1430,7 +1714,7 @@
   }
 
   /* ==============================================================
-     AUDIO PLAYER & AUTOPLAY LOGIC (PALAK MUCHHAL / ORIGINAL AUDIO)
+     AUDIO PLAYER & AUTOPLAY LOGIC (ORIGINAL AUDIO PRESERVED)
      ============================================================== */
   const chhathAudio = document.getElementById('chhathAudio');
   const musicWidget = document.getElementById('musicWidget');
@@ -1484,9 +1768,7 @@
     chhathAudio.play().then(() => {
       setMusicState(true);
       entryPortal.classList.add('unlocked');
-    }).catch(() => {
-      // Browser blocked silent autoplay: user will tap entry portal
-    });
+    }).catch(() => {});
   });
 
   // Global first touch / click fallback
@@ -1684,31 +1966,37 @@
   }
 
   /* ==============================================================
-     FLOATING RIVER DIYAS
+     REALISTIC FLOATING EARTHEN DIYAS (माटी के दीये)
      ============================================================== */
   const riverDiyaLayer = document.getElementById('riverDiyas');
-  const riverEmojis = ['🪔', '🪔', '🌸', '🪷', '🌾'];
 
   function createRiverDiya() {
-    const el = document.createElement('div');
-    el.className = 'floating-diya';
-    el.textContent = riverEmojis[Math.floor(Math.random() * riverEmojis.length)];
-    el.style.left = Math.random() * 92 + 'vw';
+    const diyaWrapper = document.createElement('div');
+    diyaWrapper.className = 'terracotta-diya';
+    
+    // Flame, Diya earthen cup, and water reflection
+    diyaWrapper.innerHTML = `
+      <div class="diya-flame"></div>
+      <div class="diya-base"></div>
+      <div class="diya-ripple"></div>
+    `;
+
+    diyaWrapper.style.left = Math.random() * 92 + 'vw';
     const dur = 10 + Math.random() * 8;
-    el.style.animationDuration = dur + 's';
-    riverDiyaLayer.appendChild(el);
+    diyaWrapper.style.animationDuration = dur + 's';
+    riverDiyaLayer.appendChild(diyaWrapper);
     setTimeout(() => {
-      el.remove();
+      diyaWrapper.remove();
     }, dur * 1000);
   }
 
-  setInterval(createRiverDiya, 2400);
+  setInterval(createRiverDiya, 2200);
   for (let i = 0; i < 6; i++) {
     setTimeout(createRiverDiya, i * 450);
   }
 
   /* ==============================================================
-     CANVAS: FLOATING MARIGOLD PETALS & GOLDEN SOLAR DUST
+     CANVAS: 3D FLOATING MARIGOLD PETALS & SOLAR FIREFLIES
      ============================================================== */
   const canvas = document.getElementById('celestialCanvas');
   const ctx = canvas.getContext('2d');

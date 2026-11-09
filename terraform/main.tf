@@ -36,3 +36,4 @@ module "chhath_static_site" {
     ManagedBy   = "Terraform"
   }
 }
+

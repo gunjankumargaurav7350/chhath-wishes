@@ -4,3 +4,4 @@ app_name            = "gunjan-chhath-wishes-2026"
 sku_tier            = "Free"
 sku_size            = "Free"
 environment         = "prod"
+

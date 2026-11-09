@@ -1,21 +1,19 @@
 /* ==============================================================
-   LUXURY DARK PLUM & VELVET FESTIVE THEME (EXACT MATCH WITH SCREENSHOTS)
+   SUNRISE & SUNSET MIXTURE AESTHETIC STYLESHEET
    ============================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel+Decorative:wght@700&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Rozha+One&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Rozha+One&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
 
 :root {
-  --bg-gradient: radial-gradient(ellipse at 50% 15%, #42083d 0%, #220324 45%, #0e0114 100%);
-  --card-bg: rgba(30, 6, 36, 0.72);
-  --card-border: rgba(255, 179, 0, 0.45);
-  --card-glow: 0 16px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 111, 0, 0.25);
   --gold-accent: #ffc107;
-  --gold-light: #fff2b2;
+  --gold-light: #fff3b0;
   --gold-signature: #ffe082;
-  --pink-btn: linear-gradient(135deg, #ff416c, #ff4b2b);
-  --orange-btn: linear-gradient(135deg, #ff8c00, #ff4500);
-  --green-btn: linear-gradient(135deg, #10b981, #059669);
-  --pill-bg: rgba(255, 255, 255, 0.08);
-  --pill-border: rgba(255, 255, 255, 0.2);
+  --sunset-crimson: #c2185b;
+  --sunset-orange: #e65100;
+  --sunrise-amber: #ff9800;
+  --sunrise-gold: #ffca28;
+  --card-bg: rgba(22, 6, 28, 0.72);
+  --card-border: rgba(255, 179, 0, 0.45);
+  --card-glow: 0 16px 50px rgba(0, 0, 0, 0.65), 0 0 35px rgba(255, 111, 0, 0.3);
 }
 
 * {
@@ -32,14 +30,131 @@ html {
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: #fff;
-  background: var(--bg-gradient);
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
+  background-color: #12031c;
 }
 
 /* ==============================================================
-   BACKGROUND CANVAS (FLOATING LOTUS, DIYAS, SPARKS, FIREWORKS)
+   SUNRISE & SUNSET CELESTIAL MIXTURE BACKDROP
+   ============================================================== */
+.celestial-sky-backdrop {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* BLENDED SKY: Twilight Crimson (Sunset) merging with Morning Dawn Gold (Sunrise) */
+.sky-dual-gradient {
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(180deg, #180324 0%, #3e0b38 25%, #881832 50%, #d84315 70%, #ff8f00 85%, #081224 100%),
+    radial-gradient(circle at 20% 40%, rgba(194, 24, 91, 0.6) 0%, transparent 60%),
+    radial-gradient(circle at 80% 40%, rgba(255, 160, 0, 0.6) 0%, transparent 60%);
+  background-blend-mode: screen;
+}
+
+/* GOD RAYS SPREADING ACROSS THE SKY */
+.sun-god-rays {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150vmax;
+  height: 150vmax;
+  background: conic-gradient(
+    from 0deg,
+    rgba(255, 215, 0, 0.1) 0deg 15deg,
+    transparent 15deg 30deg,
+    rgba(255, 87, 34, 0.1) 30deg 45deg,
+    transparent 45deg 60deg,
+    rgba(255, 215, 0, 0.1) 60deg 75deg,
+    transparent 75deg 90deg,
+    rgba(255, 87, 34, 0.1) 90deg 105deg,
+    transparent 105deg 120deg,
+    rgba(255, 215, 0, 0.1) 120deg 135deg,
+    transparent 135deg 150deg,
+    rgba(255, 87, 34, 0.1) 150deg 165deg,
+    transparent 165deg 180deg,
+    rgba(255, 215, 0, 0.1) 180deg 195deg,
+    transparent 195deg 210deg,
+    rgba(255, 87, 34, 0.1) 210deg 225deg,
+    transparent 225deg 240deg,
+    rgba(255, 215, 0, 0.1) 240deg 255deg,
+    transparent 255deg 270deg,
+    rgba(255, 87, 34, 0.1) 270deg 285deg,
+    transparent 285deg 300deg,
+    rgba(255, 215, 0, 0.1) 300deg 315deg,
+    transparent 315deg 330deg,
+    rgba(255, 87, 34, 0.1) 330deg 345deg,
+    transparent 345deg 360deg
+  );
+  border-radius: 50%;
+  filter: blur(14px);
+  animation: godRaysDrift 90s linear infinite;
+  opacity: 0.85;
+}
+
+@keyframes godRaysDrift {
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* DUAL SUN ORB (SUNRISE & SUNSET COMBINED ENERGY) */
+.dual-sun-orb {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(200px, 42vw, 340px);
+  height: clamp(200px, 42vw, 340px);
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, #ffffff 0%, #fff9c4 30%, #ffca28 55%, #ff5722 80%, #b71c1c 100%);
+  box-shadow: 0 0 90px rgba(255, 193, 7, 0.95), 0 0 170px rgba(255, 87, 34, 0.85), 0 0 250px rgba(194, 24, 91, 0.6);
+  filter: blur(1px);
+  animation: dualSunPulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes dualSunPulse {
+  0% { transform: translate(-50%, -50%) scale(0.97); }
+  100% { transform: translate(-50%, -50%) scale(1.05); }
+}
+
+/* SACRED RIVER WATERS WITH SPECULAR SUN REFLECTION */
+.sacred-river-waters {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  background: linear-gradient(180deg, rgba(255, 140, 0, 0.3) 0%, rgba(18, 12, 38, 0.85) 35%, #050e1c 100%);
+  overflow: hidden;
+}
+
+.river-sun-reflection {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(140px, 35vw, 300px);
+  height: 100%;
+  background: radial-gradient(ellipse at 50% 0%, rgba(255, 235, 59, 0.9) 0%, rgba(255, 152, 0, 0.5) 45%, rgba(216, 67, 21, 0.2) 75%, transparent 100%);
+  filter: blur(8px);
+  animation: reflectionWobble 4s ease-in-out infinite alternate;
+}
+
+@keyframes reflectionWobble {
+  0% { transform: translateX(-50%) scaleX(0.95); }
+  100% { transform: translateX(-50%) scaleX(1.08); }
+}
+
+/* ==============================================================
+   CANVAS PARTICLES (LOTUS, DIYAS, SPARKS)
    ============================================================== */
 canvas#festiveCanvas {
   position: fixed;
@@ -50,192 +165,64 @@ canvas#festiveCanvas {
   pointer-events: none;
 }
 
-/* FLOATING AMBIENT DIYAS & LOTUS PETALS */
-.ambient-floating-layer {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 2;
-  overflow: hidden;
-}
-
-.floating-lotus-item {
-  position: absolute;
-  bottom: -50px;
-  font-size: 24px;
-  filter: drop-shadow(0 0 12px rgba(255, 105, 180, 0.8));
-  opacity: 0.85;
-  animation: driftUpward linear infinite;
-}
-
-@keyframes driftUpward {
-  0% {
-    transform: translateY(0) translateX(0) scale(0.7) rotate(0deg);
-    opacity: 0;
-  }
-  15% { opacity: 0.95; }
-  85% { opacity: 0.85; }
-  100% {
-    transform: translateY(-115vh) translateX(45px) scale(1.15) rotate(20deg);
-    opacity: 0;
-  }
-}
-
 /* ==============================================================
    MAIN CONTAINER
    ============================================================== */
 main {
   position: relative;
   z-index: 10;
-  max-width: 920px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 30px 18px 80px;
+  padding: 30px 18px 70px;
 }
 
 /* ==============================================================
-   TOP VIBE PILLS (EXACT MATCH WITH SCREENSHOT 1)
-   ============================================================== */
-.vibe-section {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.vibe-hint {
-  font-size: clamp(0.85rem, 2.5vw, 1rem);
-  color: #f7d070;
-  font-weight: 600;
-  margin-bottom: 14px;
-  letter-spacing: 0.5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.vibe-pills-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  max-width: 780px;
-  margin: 0 auto;
-}
-
-.vibe-pill {
-  background: var(--pill-bg);
-  border: 1px solid var(--pill-border);
-  color: #ffffff;
-  padding: 8px 18px;
-  border-radius: 50px;
-  font-size: 0.88rem;
-  font-weight: 600;
-  cursor: pointer;
-  backdrop-filter: blur(12px);
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.vibe-pill:hover, .vibe-pill:active {
-  background: rgba(255, 179, 0, 0.25);
-  border-color: var(--gold-accent);
-  transform: translateY(-3px) scale(1.06);
-  box-shadow: 0 6px 20px rgba(255, 179, 0, 0.45);
-}
-
-/* ==============================================================
-   SIGNATURE HERO DEDICATION (EXACT MATCH WITH SCREENSHOT 1)
+   DEDICATION SIGNATURE HERO (CENTERED SENIOR CONSULTANT)
    ============================================================== */
 .signature-hero {
   text-align: center;
-  margin: 35px 0 25px;
+  margin: 20px 0 35px;
 }
 
 .sub-header-tracking {
-  font-size: clamp(0.78rem, 2.2vw, 0.92rem);
+  font-size: clamp(0.78rem, 2.2vw, 0.95rem);
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: #f3cf7a;
-  font-weight: 600;
-  margin-bottom: 8px;
+  color: #ffca28;
+  font-weight: 700;
+  margin-bottom: 6px;
 }
 
 .signature-name {
-  font-family: 'Great Vibes', 'Alex Brush', cursive;
-  font-size: clamp(2.8rem, 8vw, 4.8rem);
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(3rem, 9vw, 5.2rem);
   color: var(--gold-signature);
   line-height: 1.15;
-  margin: 4px 0 10px;
+  margin: 4px 0 6px;
   text-shadow: 0 0 25px rgba(255, 215, 0, 0.65), 0 0 50px rgba(255, 111, 0, 0.4);
 }
 
-.signature-role {
-  font-size: clamp(0.85rem, 2.4vw, 1.05rem);
-  color: #e0d0eb;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-/* ==============================================================
-   MAIN ACTION BUTTONS ROW (EXACT MATCH WITH SCREENSHOT 1)
-   ============================================================== */
-.action-buttons-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin: 25px 0 40px;
-}
-
-.action-btn {
-  padding: 12px 24px;
-  border-radius: 50px;
-  font-size: 0.94rem;
-  font-weight: 700;
-  cursor: pointer;
-  border: 1px solid var(--pill-border);
-  background: var(--pill-bg);
+.designation-title {
+  font-size: clamp(0.95rem, 2.6vw, 1.2rem);
   color: #fff;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  backdrop-filter: blur(14px);
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.action-btn:hover {
-  transform: translateY(-3px) scale(1.04);
-}
-
-.btn-burst-arghya {
-  background: var(--pink-btn);
-  border: none;
-  box-shadow: 0 8px 25px rgba(255, 65, 108, 0.55), 0 0 20px rgba(255, 75, 43, 0.4);
-}
-
-.btn-burst-arghya:hover {
-  box-shadow: 0 12px 35px rgba(255, 65, 108, 0.8);
-}
-
-.btn-music-toggle.playing {
-  background: rgba(255, 193, 7, 0.25);
-  border-color: var(--gold-accent);
-  color: var(--gold-accent);
-  box-shadow: 0 0 20px rgba(255, 193, 7, 0.4);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0 auto;
+  text-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
 }
 
 /* ==============================================================
-   MASTER WISH CARD (EXACT HINDI USER TEXT + PRESTIGIOUS STYLING)
+   MASTER WISH CARD (EXACT USER PROVIDED TEXT)
    ============================================================== */
 .master-wish-card {
   background: var(--card-bg);
   border: 1.5px solid var(--card-border);
   border-radius: 32px;
   padding: clamp(26px, 6vw, 44px);
-  margin: 30px 0;
+  margin: 25px 0;
   box-shadow: var(--card-glow);
-  backdrop-filter: blur(24px);
+  backdrop-filter: blur(28px);
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -248,7 +235,7 @@ main {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #ff416c, #ff8c00, #ffc107, #ff416c);
+  background: linear-gradient(90deg, #ff5722, #ffc107, #ffe082, #ff5722);
   background-size: 200% auto;
   animation: borderShimmer 4s linear infinite;
 }
@@ -266,7 +253,7 @@ main {
 }
 
 .wish-couplet-highlight {
-  background: rgba(255, 140, 0, 0.16);
+  background: rgba(255, 140, 0, 0.18);
   border: 1px dashed rgba(255, 193, 7, 0.6);
   border-radius: 20px;
   padding: 16px 20px;
@@ -293,7 +280,7 @@ main {
 .wish-grand-title {
   margin: 25px 0 20px;
   padding: 14px 20px;
-  background: linear-gradient(135deg, rgba(255, 65, 108, 0.25), rgba(255, 140, 0, 0.25));
+  background: linear-gradient(135deg, rgba(255, 87, 34, 0.25), rgba(194, 24, 91, 0.25));
   border-radius: 20px;
   border: 1px solid rgba(255, 193, 7, 0.5);
   font-family: 'Rozha One', 'Tiro Devanagari Hindi', serif;
@@ -319,13 +306,13 @@ main {
   border-top: 1px solid rgba(255, 193, 7, 0.25);
 }
 
-/* ENGLISH CARD ACCORDION/EXPAND */
+/* ENGLISH CARD */
 .english-wish-card {
   background: var(--card-bg);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 26px;
   padding: 24px 22px;
-  margin: 25px 0;
+  margin: 25px 0 35px;
   text-align: center;
   backdrop-filter: blur(20px);
 }
@@ -346,111 +333,35 @@ main {
   font-weight: 300;
 }
 
-/* ==============================================================
-   WISH GENERATOR CARD (EXACT MATCH WITH SCREENSHOT 2)
-   ============================================================== */
-.generator-card-box {
-  background: var(--card-bg);
-  border: 1.5px solid var(--card-border);
-  border-radius: 30px;
-  padding: clamp(26px, 6vw, 42px);
-  margin: 35px 0 20px;
-  box-shadow: var(--card-glow);
-  backdrop-filter: blur(24px);
+/* SINGLE CLEAN WHATSAPP SHARE BUTTON */
+.share-btn-wrap {
   text-align: center;
+  margin: 30px 0;
 }
 
-.gen-header-title {
-  font-family: 'Tiro Devanagari Hindi', serif;
-  font-size: clamp(1.35rem, 4.2vw, 2.1rem);
-  color: var(--gold-accent);
-  font-weight: 700;
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.gen-header-title span.sparkle {
-  color: var(--gold-accent);
-  font-size: 1.4rem;
-}
-
-.gen-subtext {
-  color: #ffecd2;
-  font-size: clamp(0.88rem, 2.5vw, 1.02rem);
-  margin-bottom: 24px;
-  line-height: 1.6;
-}
-
-.gen-input-column {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  max-width: 580px;
-  margin: 0 auto 24px;
-}
-
-.gen-input-field {
-  width: 100%;
-  padding: 15px 22px;
-  border-radius: 50px;
-  background: rgba(14, 2, 18, 0.85);
-  border: 1.5px solid rgba(255, 179, 0, 0.4);
+.whatsapp-share-btn {
+  background: linear-gradient(135deg, #25d366, #128c7e);
   color: #fff;
-  font-size: 1.02rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  outline: none;
-  transition: all 0.3s ease;
-}
-
-.gen-input-field:focus {
-  border-color: var(--gold-accent);
-  box-shadow: 0 0 20px rgba(255, 193, 7, 0.45);
-  background: rgba(22, 4, 30, 0.95);
-}
-
-.gen-actions-row {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
-.gen-pill-btn {
-  padding: 14px 28px;
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 1rem;
-  cursor: pointer;
   border: none;
-  color: #fff;
-  display: flex;
+  border-radius: 50px;
+  padding: 16px 36px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-.btn-orange-copy {
-  background: var(--orange-btn);
-  box-shadow: 0 8px 25px rgba(255, 69, 0, 0.5);
-}
-
-.btn-green-whatsapp {
-  background: var(--green-btn);
-  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5);
-}
-
-.gen-pill-btn:hover {
+.whatsapp-share-btn:hover {
   transform: translateY(-3px) scale(1.05);
-  filter: brightness(1.12);
+  box-shadow: 0 14px 40px rgba(37, 211, 102, 0.7);
 }
 
-/* ==============================================================
-   TOAST NOTIFICATION
-   ============================================================== */
+/* TOAST NOTIFICATION */
 .toast-pill {
   position: fixed;
   bottom: 30px;
@@ -474,13 +385,11 @@ main {
   opacity: 1;
 }
 
-/* ==============================================================
-   FOOTER (EXACT MATCH WITH SCREENSHOT 1)
-   ============================================================== */
+/* FOOTER */
 footer {
   text-align: center;
   padding: 30px 15px 40px;
-  color: #d8c2e6;
+  color: #ffca28;
   font-size: 0.88rem;
   position: relative;
   z-index: 10;
@@ -488,7 +397,7 @@ footer {
 }
 
 footer a {
-  color: var(--gold-accent);
-  text-decoration: none;
-  font-weight: 600;
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 700;
 }

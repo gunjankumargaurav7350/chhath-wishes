@@ -175,3 +175,4 @@ setInterval(spawnAmbientLotus, 2200);
 for (let i = 0; i < 6; i++) {
   setTimeout(spawnAmbientLotus, i * 400);
 }
+

@@ -14,7 +14,7 @@ locals {
   rg_location = var.create_resource_group ? azurerm_resource_group.rg[0].location : var.location
 }
 
-resource "azurerm_static_web_app" "static_site" {
+resource "azurerm_static_site" "static_site" {
   name                = var.app_name
   resource_group_name = local.rg_name
   location            = local.rg_location

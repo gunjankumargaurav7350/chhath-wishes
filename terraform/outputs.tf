@@ -13,3 +13,4 @@ output "deployment_token" {
   value       = module.chhath_static_site.api_key
   sensitive   = true
 }
+

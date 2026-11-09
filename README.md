@@ -1,58 +1,56 @@
-# 🌾 लोक आस्था का महापर्व छठ पूजा 2026 (Chhath Wishes)
+# 🌾 लोक आस्था का महापर्व छठ पूजा 2026 (Chhath Wishes - 2026 Edition)
 
 [![Live Demo](https://img.shields.io/badge/LIVE_DEMO-Chhath%20Wishes%202026-ff6f00?style=for-the-badge&logo=googlechrome&logoColor=white)](https://gunjankumargaurav7350.github.io/chhath-wishes/)
-[![Audio: Palak Muchhal & Pawan Singh](https://img.shields.io/badge/Audio-Palak%20Muchhal%20%26%20Pawan%20Singh-d84315?style=for-the-badge&logo=audiomack&logoColor=white)](#)
+[![Audio: Palak Muchhal & Pawan Singh](https://img.shields.io/badge/Audio-Chhath%20Song%20Original-d84315?style=for-the-badge&logo=audiomack&logoColor=white)](#)
 [![Maintained by: Gunjan Kumar Gaurav](https://img.shields.io/badge/Creator-Gunjan%20Kumar%20Gaurav-0078D4?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gunjankumargaurav7350)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-> **🌾 लोक आस्था, पवित्रता, और अखंड श्रद्धा का महापर्व छठ पूजा 2026 🌅**  
-> भगवान भास्कर और छठी मईया के पावन आशीर्वाद के साथ एक आधुनिक, इंटरएक्टिव और संगीत से सुसज्जित वेब शुभकामना अनुभव।
+> **🌅 संध्या और उषा का पावन संगम • लोक आस्था का महापर्व छठ पूजा 2026 🌾**  
+> "संसार केवल उगते हुए सूर्य को शीश नवाता है, किन्तु हमारी सनातन आस्था ढलते सूर्य को भी प्रथम अर्घ्य देकर जीवन में कृतज्ञता, समरसता और अखंड धैर्य का अमर पाठ पढ़ाती है।"
 
 🔗 **लाइव वेबसाइट लिंक:**  
 👉 **[https://gunjankumargaurav7350.github.io/chhath-wishes/](https://gunjankumargaurav7350.github.io/chhath-wishes/)**
 
 ---
 
-## 🌟 प्रमुख विशेषताएं (Core Features)
+## 🌟 प्रमुख विशेषताएं (Core Trending Features)
 
-### 🎵 1. छठी मईया का पावन संगीत (Autoplay Audio):
-- पेज खुलते ही बैकग्राउंड में **पलक मुच्छल एवं पवन सिंह** का सुप्रसिद्ध छठ गीत (*"जोड़े जोड़े फलवा सुरुज देव घटवा पे"* / *"सीतली बयरीया"* - 5 मिनट 27 सेकंड) बजने लगता है।
-- **फ्लोटिंग म्यूजिक कंट्रोलर**: टॉप राइट कॉर्नर में इक्वलाइज़र बार्स और प्ले/पॉज़ टॉगल बटन।
-- **स्मूथ ऑटोप्ले**: ब्राउज़र ऑटोप्ले पॉलिसी को ध्यान में रखते हुए किसी भी फर्स्ट-टच / स्क्रोल पर तुरंत ऑडियो एक्टिवेट हो जाता है।
+### 🌅 1. सूर्योदय व सूर्यास्त का दिव्य संगम (Sunrise & Sunset Celestial Duality):
+- छठ विश्व का एकमात्र ऐसा महापर्व है जहाँ **अस्ताचलगामी (डूबते हुए) सूर्य** और **उदीयमान (उगते हुए) सूर्य** दोनों की पूजा की जाती है।
+- **डायनामिक थीम स्विचर**: 
+  - `🌅 संध्या अर्घ्य (Sunset Gold & Crimson)`
+  - `✨ दिव्य संगम (Celestial Blend of Dusk & Dawn)`
+  - `🌄 उषा अर्घ्य (Radiant Morning Saffron)`
+- **गंगा तरंग व दीपदान**: एनिमेटेड गंगा की पवित्र लहरें एवं नदी में तैरते माटी के दीये।
 
-### 🪔 2. छठ महापर्व के 4 पावन दिन (Interactive 4-Day Rituals):
-1. **प्रथम दिवस: नहाय-खाय (Nahay-Khay)**  
-   - गंगा स्नान, कद्दू-भात (लौकी की सब्जी) और चने की दाल का महाप्रसाद।  
-   - *क्लिक एक्शन*: पवित्र स्नान व संकल्प मंत्र एनीमेशन और मंदिर की घंटी की ध्वनि।
-2. **द्वितीय दिवस: खरना / लोहंडा (Kharna)**  
-   - 36 घंटे के निर्जला व्रत का प्रारंभ, मिट्टी के चूल्हे पर गुड़ की बनी रसियाव (खीर) और रोटी का महाप्रसाद।  
-   - *क्लिक एक्शन*: दीया प्रज्वलन और महाप्रसाद ग्रहण आशीर्वाद।
-3. **तृतीय दिवस: संध्या अर्घ्य (Sandhya Arghya)**  
-   - अस्ताचलगामी (डूबते हुए) भगवान सूर्य को पहला अर्घ्य। बांस का सूप, दउरा, ईख और ठेकुआ।  
-   - *क्लिक एक्शन*: डूबते सूर्य को दूध व गंगाजल अर्पण, वैदिक सूर्य मंत्र और लहरों का प्रभाव।
-4. **चतुर्थ दिवस: उषा अर्घ्य एवं पारण (Usha Arghya & Paran)**  
-   - उदीयमान (उगते हुए) सूर्य को प्रातःकालीन दूसरा अर्घ्य और व्रत की पूर्णता।  
-   - *क्लिक एक्शन*: सूर्योदय की स्वर्णिम किरणें, शंखनाद और ठेकुआ प्रसाद वितरण।
+### 🎵 2. लिंक टच करते ही इंस्टेंट ऑडियो ऑटोप्ले (Instant Tap-To-Play Gate):
+- **छठी मइया का पावन प्रसाद द्वार**: मोबाइल और डेस्कटॉप ब्राउज़र ऑटोप्ले प्रतिबंधों को ध्यान में रखते हुए एक शानदार फुल-स्क्रीन वेलकम पोर्टल जो टच करते ही **पावन छठ गीत** तुरंत शुरू कर देता है।
+- **म्यूजिक विज़ुअलाइज़र**: लाइव इक्वलाइज़र बार्स, विनाइल स्पिन एनीमेशन एवं प्ले/पॉज़ टॉगल।
+- **ऑरिजिनल पावन गीत**: ओरिजिनल ऑडियो ट्रैक सुरक्षित रखा गया है।
 
-### 🧺 3. वन-क्लिक डिजिटल अनुष्ठान (Interactive Actions):
-- 🌅 **सूर्य अर्घ्य अर्पण**: सूर्य देव को दूध का अर्घ्य एवं सूर्य नमस्कार आशीर्वाद।
-- 🪔 **दीपदान**: गंगा तट पर तैरते हुए माटी के दीपकों का दीपदान।
-- 🧺 **दउरा व सूप दर्शन**: पारंपरिक ठेकुआ, नारियल, ईख, हल्दी और मौसमी फलों की थाली।
-- 🔔 **शंखनाद व जयकारा**: प्रामाणिक शंख की गूंज और पुष्प वर्षा।
-- 🍬 **डिजिटल ठेकुआ प्रसाद**: दोस्तों और परिवार को तुरंत WhatsApp पर प्रसाद और शुभकामना शेयर करने की सुविधा।
+### ✍️ 3. दिल छू लेने वाली अनूठी महा-शुभकामना (Soul-Stirring Poetic Wish):
+- सनातन दर्शन, डूबते सूर्य के प्रति कृतज्ञता, 36 घंटे के अखंड निर्जला तप, गंगा तट की पवित्रता और शुद्ध देसी घी के ठेकुआ प्रसाद पर आधारित ऐसी काव्यमयी शुभकामना जो आज तक किसी ने नहीं देखी।
+- साथ ही पारंपरिक लोकगीत *"काँच ही बाँस के बहँगिया, बहँगी लचकत जाए..."* का अमृत स्पर्श।
 
-### 📲 4. पर्सनलाइज्ड विश लिंक जनरेटर (Trending WhatsApp Sharing):
-- अपना नाम और दोस्त का नाम डालें (उदा. `Gunjan Kumar Gaurav` to `Dost`).
-- यह स्वचालित रूप से कस्टमाइज्ड लिंक बनाता है: `?from=Gunjan+Kumar+Gaurav&to=Dost`.
-- 1-क्लिक में **WhatsApp पर शेयर** करें या **लिंक कॉपी** करें।
+### 🧺 4. डिजिटल अर्घ्य व अनुष्ठान (Interactive Rituals):
+- 🌅 **सूर्य अर्घ्य अर्पण**: सूर्य देव को गंगाजल व दूध का अर्घ्य एवं वैदिक सूर्य मंत्र।
+- 🪔 **गंगा तट दीपदान**: गंगाजी में बहते हुए मंगल दीपकों का दीपदान।
+- 🧺 **सूप व दउरा दर्शन**: शुद्ध घी का ठेकुआ, नारियल, ईख, हल्दी और मौसमी फलों की पारंपरिक थाली।
+- 🔔 **शंखनाद व मंदिर घंटी**: सिंथेसाइज़र पर आधारित सजीव शंखनाद और मंदिर की घंटियाँ।
+- 🍬 **ठेकुआ प्रसाद शेयर**: एक क्लिक में परिवार व मित्रों को WhatsApp पर ठेकुआ प्रसाद भेजने की सुविधा।
+
+### 📲 5. वायरल WhatsApp विश लिंक जनरेटर (Personalized Viral Share):
+- अपना शुभ नाम और प्रेषक का नाम दर्ज करें।
+- स्वचालित रूप से कस्टमाइज्ड लिंक तैयार होता है: `?from=Gunjan+Kumar+Gaurav&to=Dost`.
+- ट्रेंडिंग इमोजी व दिल छू लेने वाले संदेश के साथ 1-क्लिक WhatsApp शेयरिंग।
 
 ---
 
 ## 🛠️ Tech Stack
-- **Frontend**: Pure Semantic HTML5, Modern CSS3 (Glassmorphism, Radial Gradients, Keyframe Animations), Vanilla JavaScript (ES6+).
-- **Audio Engine**: HTML5 Audio API (Palak Muchhal & Pawan Singh festive geet) + Web Audio API synthesizer for instant temple bell chimes and conch shell (*शंखनाद*).
-- **Particle System**: HTML5 Canvas rendering golden sparkles and marigold (*गेंदा*) flower petals shower.
-- **Hosting**: GitHub Pages with automated CDN delivery.
+- **Frontend**: Semantic HTML5, Ultra-Modern CSS3 (Luxury Glassmorphism, Aurora Gradients, Keyframe Mesh Animations), Vanilla JavaScript (ES6+).
+- **Audio Engine**: HTML5 Audio API (Original Chhath Geet) + Web Audio API synthesizer for real-time temple bell chimes and conch shell (*शंखनाद*).
+- **Particle System**: HTML5 Canvas rendering golden solar dust and marigold (*गेंदा*) flower petals shower.
+- **Hosting**: GitHub Pages.
 
 ---
 
